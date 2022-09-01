@@ -4,11 +4,11 @@
 
 // Variables
 
-// The ratio for the images (responsive by default)
-$picnic-dropimage-ratio: math.div(16, 9) !default;
+// The ratio for the images (responsive by default) -- 16/9==1.777..
+$picnic-dropimage-ratio: 1.77777777777778 !default;
 
 // The percentage of height (respect of width)
-$picnic-dropimage-height: percentage(math.div(1, $picnic-dropimage-ratio)) !default;
+$picnic-dropimage-height: percentage(1 / $picnic-dropimage-ratio) !default;
 
 $picnic-dropimage-background-color: #ddd !default;
 
